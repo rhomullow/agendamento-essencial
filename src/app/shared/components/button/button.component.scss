@@ -1,0 +1,17 @@
+button {
+  line-height: 8px;
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid green;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover{
+  padding: 8px;
+  border-radius: 8px;
+  background: green;
+  color: white;
+}

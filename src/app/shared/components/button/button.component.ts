@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ITypeButton } from './button';
 
 @Component({
   selector: 'app-button',
@@ -8,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() title = '';
+  @Input() type = '';
 
   constructor() { }
 
