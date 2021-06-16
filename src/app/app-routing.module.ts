@@ -7,11 +7,6 @@ import { E404Component } from './pages/errors/e404/e404.component';
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
-  },
-  {
-    path: 'home',
     component: HomeComponent
   },
   {
