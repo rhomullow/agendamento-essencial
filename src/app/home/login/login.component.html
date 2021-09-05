@@ -1,20 +1,23 @@
-<section class="card rounded">
+<section class="card bg-dark p-2 text-white bg-opacity-50">
   <div class="card-body">
     <h2>Entrar</h2>
 
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
       <div class="mb-3">
         <input
           type="email"
           class="form-control"
-          name="email"
+          formControlName="email"
           placeholder="E-mail"
           aria-describedby="emailHelp"
         />
-        <div id="emailHelp" class="form-text"></div>
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" name="password" />
+        <input
+          type="password"
+          class="form-control"
+          formControlName="password"
+        />
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="check-session" />
@@ -23,7 +26,7 @@
         >
       </div>
       <div class="d-grid">
-        <button type="submit" class="btn btn-primary">Entrar</button>
+        <button type="submit" class="btn btn-danger">Entrar</button>
       </div>
     </form>
   </div>
